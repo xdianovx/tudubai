@@ -5,9 +5,9 @@
   width: 100%;
   max-width: 306px;
   height: 100%;
-  background: #effbef;
   border-radius: 8px;
   overflow: hidden;
+  background: #effbef;
   min-height: 450px;
 
   .read-more [aria-expanded='true'] {
@@ -123,6 +123,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
+  min-height: 48px;
 }
 
 .product__excerpt {
@@ -133,7 +134,7 @@
 
 .product__price {
   display: flex;
-  margin-top: auto;
+  margin-top: 16px;
   margin-bottom: 16px;
 
   p {

@@ -2,6 +2,26 @@ import Swiper, { Pagination, Navigation } from 'swiper'
 Swiper.use([Pagination, Navigation])
 
 const slider = (selector, config) => {
+  const excurtionReviewsSlider = new Swiper('.excurtion-reviews-slider', {
+    navigation: {
+      nextEl: '.excurtion-reviews-arrows .swiper-button-next',
+      prevEl: '.excurtion-reviews-arrows .swiper-button-prev',
+    },
+    pagination: {
+      el: '.excurtion-reviews-pagination',
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 24,
+      },
+      1025: {
+        slidesPerView: 2,
+      },
+    },
+  })
+
   const reviewsSlider = new Swiper('.reviews-slider', {
     loop: true,
     pagination: {
@@ -32,7 +52,7 @@ const slider = (selector, config) => {
       },
       621: {
         slidesPerView: 2,
-        spaceBetween: 16
+        spaceBetween: 16,
       },
 
       1025: {

@@ -3,9 +3,9 @@ import Choices from 'choices.js'
 import MicroModal from 'micromodal'
 import Readmore from 'readmore-js'
 import Inputmask from 'inputmask'
-import { Fancybox } from "@fancyapps/ui";
+import { Fancybox } from '@fancyapps/ui'
 import burger from './modules/burger'
-import slider from "./modules/slider";
+import slider from './modules/slider'
 
 burger()
 slider()
@@ -16,14 +16,16 @@ headerLangDrop.addEventListener('click', () => {
 })
 
 const selects = document.querySelectorAll('.select')
-selects.forEach((item) => {
-  new Choices(item, {
-    searchEnabled: false,
-    classNames: {
-      containerOuter: 'select choices',
-    },
+if (selects) {
+  selects.forEach((item) => {
+    new Choices(item, {
+      searchEnabled: false,
+      classNames: {
+        containerOuter: 'select choices',
+      },
+    })
   })
-})
+}
 
 MicroModal.init({
   disableScroll: true, // [6]
@@ -36,7 +38,6 @@ new Readmore('.read-more', {
   moreLink: '<a href="#" class="more-link">Подробнее</a>',
   lessLink: '<a href="#" class="more-link">Свернуть</a>',
 })
-
 
 const accordions = document.querySelectorAll('.accordion')
 

@@ -1,0 +1,98 @@
+.excurtion-reviews {
+  margin-top: 96px;
+}
+
+.excurtion-reviews-slider {
+  margin-top: 40px;
+}
+
+.excurtion-review {
+  background: #effbef;
+  border-radius: 8px;
+  padding: 24px 32px;
+  display: flex;
+}
+
+.excurtion-review__info {
+}
+
+.excurtion-review__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.excurtion-review__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.excurtion-review__img {
+  margin-right: 32px;
+  width: 90px;
+  min-width: 90px;
+  overflow: hidden;
+  height: 90px;
+  border-radius: 50%;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.excurtion-review__rating {
+  display: flex;
+
+  .star {
+    margin-right: 8px;
+  }
+}
+
+.excurtion-review__text {
+  margin-top: 24px;
+  p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .excurtion-reviews {
+    margin-top: 64px;
+  }
+
+  .excurtion-reviews-slider {
+    margin-top: 24px;
+  }
+
+  .excurtion-review__img {
+    margin-right: 16px;
+  }
+
+  .excurtion-review__text {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .excurtion-review {
+    padding: 16px 20px;
+  }
+  .excurtion-review__img {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+  }
+
+  .excurtion-review__rating .star {
+    width: 18px;
+    height: 18px;
+  }
+
+  .excurtion-review__text p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
