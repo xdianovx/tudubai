@@ -1,0 +1,160 @@
+.callback {
+  position: relative;
+  margin-top: 128px;
+  padding-bottom: 197px;
+
+  .title-h2 {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 128px;
+      height: 2px;
+      background: $accent;
+      content: '';
+    }
+  }
+
+  .callback__town {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+  }
+}
+
+.callback__wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.callback__left {
+  max-width: 415px;
+
+  p {
+    margin-bottom: 32px;
+  }
+}
+
+.callback__socials {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+
+  .soc {
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.callback__form {
+  width: 100%;
+  max-width: 416px;
+  margin-left: 116px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    input {
+      margin-bottom: 16px;
+    }
+
+    textarea {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .callback {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .callback__wrap {
+    justify-content: space-between;
+  }
+
+  .callback__town {
+    display: none;
+  }
+
+  .callback__left p {
+    margin-bottom: 16px;
+  }
+
+  .callback__socials {
+    margin-top: 24px;
+
+    .soc {
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .callback {
+    margin-top: 80px;
+    padding-bottom: 64px;
+  }
+
+  .callback__form form input {
+    margin-bottom: 8px;
+  }
+
+  .callback__form {
+    margin-left: 40px;
+  }
+
+  .callback__left {
+    width: 100%;
+    max-width: none;
+  }
+
+  .callback__wrap {
+    margin-top: 32px;
+  }
+
+  .callback__left p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 630px) {
+  .callback {
+    padding-bottom: 40px;
+  }
+
+  .callback__wrap {
+    flex-direction: column;
+  }
+
+  .callback__left {
+    max-width: 290px;
+  }
+
+  .callback__form {
+    margin-top: 32px;
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+  }
+}

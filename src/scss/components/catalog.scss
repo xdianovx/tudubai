@@ -1,0 +1,35 @@
+.catalog {
+  margin-top: 96px;
+}
+
+.catalog__wrap {
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1440px) {
+  .catalog {
+    margin-top: 48px;
+  }
+
+  .catalog__wrap {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .catalog {
+    margin-top: 32px;
+  }
+
+  .catalog__wrap {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .catalog__wrap {
+    flex-direction: column;
+  }
+}

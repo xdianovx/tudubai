@@ -1,0 +1,40 @@
+.catalog-upsell {
+  margin-top: 64px;
+}
+
+.catalog-upsell-slider {
+  margin-top: 32px;
+}
+
+@media (max-width: 1440px) {
+  .catalog-upsell-slider {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .catalog-upsell {
+    margin-top: 40px;
+    .product {
+      max-width: none;
+
+      .product__image {
+        height: 180px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .catalog-upsell {
+    margin-top: 32px;
+  }
+  .catalog-upsell-slider {
+    margin-top: 16px;
+  }
+}

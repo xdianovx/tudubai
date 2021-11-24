@@ -1,26 +1,77 @@
 <header class="header">
   <div class="container">
     <div class="header__wrap">
-      <a href="#"> </a>
+      <div class="burger">
+        <span></span>
+      </div>
+      <a href="#" class="header__logo">
+        <img src="./images/logo.svg" alt="Логотип" />
+      </a>
 
       <nav class="header__nav nav">
         <ul>
           <li>
-            <a href="#"></a>
+            <a href="./index.html" class="active">Главная</a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="./catalog.html">Экскурсии</a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">Контакты</a>
           </li>
           <li>
-            <a href="#"></a>
+            <a href="#">О нас</a>
           </li>
         </ul>
+
+        <div class="header__nav-bottom-mob">
+          <a href="tel:+79999999999">+7 (999) 999 99 99</a>
+          <div class="header__socials">
+            <div class="soc">
+              <img src="./images/ig-w.svg" alt="" />
+            </div>
+
+            <div class="soc">
+              <img src="./images/wa-w.svg" alt="" />
+            </div>
+
+            <div class="soc">
+              <img src="./images/fb-w.svg" alt="" />
+            </div>
+
+            <div class="soc">
+              <img src="./images/phone-w.svg" alt="" />
+            </div>
+
+            <div class="soc">
+              <img src="./images/email-w.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="header__lang header__lang-mob">
+          <div class="header__lang_selector">RU</div>
+          <ul class="header__lang_drop">
+            <li>Русский</li>
+            <li>English</li>
+          </ul>
+        </div>
       </nav>
 
-      <div class="header__right"></div>
+      <div class="header__right">
+        <div class="header__lang">
+          <div class="header__lang_selector">RU</div>
+          <ul class="header__lang_drop">
+            <li>Русский</li>
+            <li>English</li>
+          </ul>
+        </div>
+
+        <a href="tel:89998887766" class="header__call">
+          <svg>
+            <use xlink:href="./images/sprites/sprite-multi.svg#phone"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </header>

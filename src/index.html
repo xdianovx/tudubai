@@ -11,10 +11,974 @@
     @@include('./components/header.html')
 
     <main>
-      <!-- Go here! -->
+      <section class="hero" style="background: url('./images/content/hero.jpg')">
+        <div class="container">
+          <div class="hero__info">
+            <h1 class="title-h1">
+              Экскурсии <br />
+              без посредников
+            </h1>
+            <p>Лучшие в своем деле в своем деле</p>
+            <div class="hero__btns">
+              <a href="#" class="btn btn-main" data-micromodal-trigger="modal-1">Записаться на экскурсию</a>
+              <a href="#" class="btn btn-underline">Посмотреть все экскурсии</a>
+            </div>
+          </div>
+
+          <div class="hero__cards">
+            <div class="swiper hero-cards-slider">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a href="#" class="hero__card" style="background: url('./images/top-1.jpg') no-repeat center / cover">
+                    <div class="hero__card_info">
+                      <p>На земле</p>
+                      <span class="hero__card_arr">
+                        <img src="./images/arr-r.svg" alt="" />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="hero__card" style="background: url('./images/top-3.jpg') no-repeat center / cover">
+                    <div class="hero__card_info">
+                      <p>В городе</p>
+                      <span class="hero__card_arr">
+                        <img src="./images/arr-r.svg" alt="" />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="hero__card" style="background: url('./images/top-4.jpg') no-repeat center / cover">
+                    <div class="hero__card_info">
+                      <p>В воздухе</p>
+                      <span class="hero__card_arr">
+                        <img src="./images/arr-r.svg" alt="" />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="hero__card" style="background: url('./images/top-2.jpg') no-repeat center / cover">
+                    <div class="hero__card_info">
+                      <p>На воде</p>
+                      <span class="hero__card_arr">
+                        <img src="./images/arr-r.svg" alt="" />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking">
+        <div class="container">
+          <h2 class="title-h2">Забронировать экскурсию</h2>
+
+          <div class="booking-calculator">
+            <div action="#" class="booking-form">
+              <div class="input-label">
+                <label for="date">Выберите дату</label>
+                <input type="date" id="datefield" value="2013-01-08" />
+              </div>
+
+              <div class="input-label">
+                <label for="date">Время</label>
+                <input type="time" />
+              </div>
+
+              <div class="input-label">
+                <label for="date">Вид</label>
+                <select name="" id="" class="select">
+                  <option value="1">Групповой</option>
+                  <option value="1">Индивидуальный</option>
+                </select>
+              </div>
+
+              <div class="input-label">
+                <label for="date">Эмират</label>
+                <select name="" class="select">
+                  <option value="1">Дубай</option>
+                  <option value="1">Фуйджера</option>
+                  <option value="1">Шарджа</option>
+                  <option value="1">Аджман</option>
+                  <option value="1">Рас Аль Хайма</option>
+                  <option value="1">Ум Аль Кувейн</option>
+                </select>
+              </div>
+
+              <button class="btn btn-main" data-micromodal-trigger="modal-1">Забронировать экскурсию</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular">
+        <div class="container">
+          <h2 class="title-h2">Популярные экскурсии</h2>
+          <div class="popular__wrap">
+            <div class="popular__item">
+              <div class="popular__item_image">
+                <img src="./images/content/pop-1.jpg" alt="" />
+              </div>
+
+              <div class="popular__item_info">
+                <h3>Аквариум “Дубай Молл”</h3>
+                <p>Грандиозный аквариум, который попал в книгу рекордов Гиннеса</p>
+              </div>
+            </div>
+
+            <div class="popular__item">
+              <div class="popular__item_image">
+                <img src="./images/content/pop-2.jpg" alt="" />
+              </div>
+
+              <div class="popular__item_info">
+                <h3>Баб Аль Шамс</h3>
+                <p>Свидание с самой прекрасной и опасной, вечной и изменчивой, манящей Пустыней</p>
+              </div>
+            </div>
+
+            <div class="popular__item">
+              <div class="popular__item_image">
+                <img src="./images/content/pop-3.jpg" alt="" />
+              </div>
+
+              <div class="popular__item_info">
+                <h3>Башня Бурдж Халифа</h3>
+                <p>Одним из главных символов Дубая является самый высокий в мире небоскреб Бурдж Халифа</p>
+              </div>
+            </div>
+
+            <div class="popular__item">
+              <div class="popular__item_image">
+                <img src="./images/content/pop-4.jpg" alt="" />
+              </div>
+
+              <div class="popular__item_info">
+                <h3>Индийский океан</h3>
+                <p>
+                  прекрасная возможность осмотреть разные пустыни: золотую, красную, черную и даже каменную. Старые горы
+                  и предгорья
+                </p>
+              </div>
+            </div>
+
+            <div class="popular__item">
+              <div class="popular__item_image">
+                <img src="./images/content/pop-5.jpg" alt="" />
+              </div>
+
+              <div class="popular__item_info">
+                <h3>Аквариум “Дубай Молл”</h3>
+                <p>
+                  Это не просто зоопарк — это по сути, образовательный центр и 3 национальных парка на 119 гектарах, с
+                  более чем 2500 животными
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <h2 class="title-h2">Все экскурсии</h2>
+          <div class="catalog__wrap">
+            @@include('./components/aside.html')
+
+            <div class="products">
+              <div class="product stock">
+                <div class="stock-label">Акция</div>
+
+                <div class="product__image">
+                  <img src="./images/content/prod-6.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Пустынное сафари</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__image">
+                  <img src="./images/content/prod-2.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Тематический парк MotionGate</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах, – танура, танец живота, краткое катание на верблюдах, – танура, танец живота,
+                      краткое катание на верблюдах, – танура, танец живота, краткое катание на верблюдах, – танура,
+                      танец живота, краткое катание на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="stock-label">Акция</div>
+
+                <div class="product__image">
+                  <img src="./images/content/prod-3.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Пустынное сафари</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product stock">
+                <div class="stock-label">Акция</div>
+
+                <div class="product__image">
+                  <img src="./images/content/prod-6.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Пустынное сафари</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__image">
+                  <img src="./images/content/prod-2.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Тематический парк MotionGate</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах, – танура, танец живота, краткое катание на верблюдах, – танура, танец живота,
+                      краткое катание на верблюдах, – танура, танец живота, краткое катание на верблюдах, – танура,
+                      танец живота, краткое катание на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="stock-label">Акция</div>
+
+                <div class="product__image">
+                  <img src="./images/content/prod-3.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Пустынное сафари</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product stock">
+                <div class="stock-label">Акция</div>
+
+                <div class="product__image">
+                  <img src="./images/content/prod-6.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Пустынное сафари</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product__image">
+                  <img src="./images/content/prod-2.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Тематический парк MotionGate</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах, – танура, танец живота, краткое катание на верблюдах, – танура, танец живота,
+                      краткое катание на верблюдах, – танура, танец живота, краткое катание на верблюдах, – танура,
+                      танец живота, краткое катание на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="stock-label">Акция</div>
+
+                <div class="product__image">
+                  <img src="./images/content/prod-3.jpg" alt="" />
+                </div>
+
+                <div class="product__content">
+                  <div class="product__labels">
+                    <span class="label-green label">Ежедневно</span>
+                  </div>
+
+                  <div class="product-params">
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#clock"></use>
+                        </svg>
+                      </div>
+                      <p>3ч</p>
+                    </div>
+                    <div class="param">
+                      <div class="param__icon">
+                        <svg>
+                          <use xlink:href="./images/sprites/sprite-multi.svg#users"></use>
+                        </svg>
+                      </div>
+                      <p>2-4</p>
+                    </div>
+                  </div>
+
+                  <h4 class="product__title">Пустынное сафари</h4>
+                  <div class="read-more" data-rm-words="20">
+                    <p class="product__excerpt">
+                      Катание на джипах по песчаным барханам, ужин барбекю, шоу – танура, танец живота, краткое катание
+                      на верблюдах,
+                    </p>
+                  </div>
+
+                  <div class="product__price">
+                    <p>от 150 $</p>
+                    <span>250 $</span>
+                  </div>
+
+                  <div class="product__footer">
+                    <a href="#" class="btn btn-main">Подробнее</a>
+                    <a href="#" class="btn btn-link">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="title-h2">Отзывы</h2>
+          <div class="swiper-container reviews-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__item_img">
+                    <img src="./images/content/rev-1.png" alt="Аватар" />
+                  </div>
+
+                  <h3 class="review__item_name">Анастасия</h3>
+
+                  <div class="reviews__item_stars">
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <p class="reviews__item_text">
+                    Спасибо за прекрасную организацию экскурсии! Отлично поужинали на лодке в Дубай Марине! Очень
+                    удобно, что был трансфер от отеля и обратно, посмотрели на ночной Дубай, водитель- супер!thumbsup
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__item_img">
+                    <img src="./images/content/rev-1.png" alt="Аватар" />
+                  </div>
+
+                  <h3 class="review__item_name">Анастасия</h3>
+
+                  <div class="reviews__item_stars">
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <p class="reviews__item_text">
+                    Спасибо за прекрасную организацию экскурсии! Отлично поужинали на лодке в Дубай Марине! Очень
+                    удобно, что был трансфер от отеля и обратно, посмотрели на ночной Дубай, водитель- супер!thumbsup
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__item_img">
+                    <img src="./images/content/rev-1.png" alt="Аватар" />
+                  </div>
+
+                  <h3 class="review__item_name">Анастасия</h3>
+
+                  <div class="reviews__item_stars">
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <p class="reviews__item_text">
+                    Спасибо за прекрасную организацию экскурсии! Отлично поужинали на лодке в Дубай Марине! Очень
+                    удобно, что был трансфер от отеля и обратно, посмотрели на ночной Дубай, водитель- супер!thumbsup
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__item_img">
+                    <img src="./images/content/rev-1.png" alt="Аватар" />
+                  </div>
+
+                  <h3 class="review__item_name">Анастасия</h3>
+
+                  <div class="reviews__item_stars">
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <p class="reviews__item_text">
+                    Спасибо за прекрасную организацию экскурсии! Отлично поужинали на лодке в Дубай Марине! Очень
+                    удобно, что был трансфер от отеля и обратно, посмотрели на ночной Дубай, водитель- супер!thumbsup
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review__item">
+                  <div class="review__item_img">
+                    <img src="./images/content/rev-1.png" alt="Аватар" />
+                  </div>
+
+                  <h3 class="review__item_name">Анастасия</h3>
+
+                  <div class="reviews__item_stars">
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star-filled.svg" alt="" />
+                    </div>
+                    <div class="star">
+                      <img src="./images/star.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <p class="reviews__item_text">
+                    Спасибо за прекрасную организацию экскурсии! Отлично поужинали на лодке в Дубай Марине! Очень
+                    удобно, что был трансфер от отеля и обратно, посмотрели на ночной Дубай, водитель- супер!thumbsup
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination reviews-slider-pagination slider-paginationс"></div>
+
+          <div class="review-left">
+            <div class="review-left__img">
+              <img src="./images/review-smile.png" alt="" />
+            </div>
+            <div class="review-left__left">
+              <p>Уже воспользовались нашими услугами?</p>
+              <a href="#" class="btn btn-underline" data-micromodal-trigger="modal-review">Оставьте отзыв</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="title-h2">Часто задаваемые вопросы</h2>
+          <div class="faq__wrap">
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.
+                </p>
+
+                <p>Многие известные личности заблокированы в рамках своих собственных рациональных ограничений!</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.
+                </p>
+
+                <p>Многие известные личности заблокированы в рамках своих собственных рациональных ограничений!</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.
+                </p>
+
+                <p>Многие известные личности заблокированы в рамках своих собственных рациональных ограничений!</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.
+                </p>
+
+                <p>Многие известные личности заблокированы в рамках своих собственных рациональных ограничений!</p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в формировании соответствующих условий активизации.
+                </p>
+
+                <p>Многие известные личности заблокированы в рамках своих собственных рациональных ограничений!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback">
+        <div class="callback__town">
+          <img src="./images/town.svg" alt="" />
+        </div>
+        <div class="container">
+          <h2 class="title-h2">Остались вопросы?</h2>
+          <div class="callback__wrap">
+            <div class="callback__left">
+              <p>Оставьте заявку и мы проконсультируем вас и ответим на все вопросы</p>
+              <p>Вы так же можете связаться с нами удобным для вас способом</p>
+              <div class="callback__socials">
+                <div class="soc">
+                  <img src="./images/ig.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/wa.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/fb.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/phone.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/email.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="callback__form">
+              <form action="#">
+                <input type="text" placeholder="Имя" />
+                <input type="tel" placeholder="Телефон" />
+                <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                <button type="submit" class="btn btn-main">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    @@include('./components/footer.html')
+    @@include('./components/footer.html') @@include('./components/modal-1.html')
+    @@include('./components/modal-review.html')
     <script src="./js/main.min.js"></script>
   </body>
 </html>

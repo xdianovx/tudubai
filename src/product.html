@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Tu Dubai</title>
+  </head>
+  <body>
+    @@include('./components/header.html')
+
+    <main>
+      <div
+        class="product-page-hero"
+        style="background-image: url('./images/content/single-product-bg.jpg')"
+      >
+        <div class="product-page-hero-ov"></div>
+        <div class="container">
+          <div class="product-page-hero__wrap">
+            <h1 class="title-h1">Полет на вертолете</h1>
+
+            <div class="product-page-hero__info">
+              <div class="product-page-hero__labels">
+                <div class="label">Ежедневно</div>
+                <div class="label purple">от 2-х лет</div>
+              </div>
+              <div class="product-page-hero__item">
+                <p>
+                  Сложно сказать, почему активно развивающиеся страны третьего
+                  мира призывают нас к новым свершениям, которые, в свою
+                  очередь, должны быть заблокированы в рамках своих собственных
+                  рациональных ограничений.
+                </p>
+
+                <ul>
+                  <li>12 - 25 минут над знаковыми зданиями</li>
+                  <li>Преимущество</li>
+                  <li>До 6-ти человек</li>
+                </ul>
+
+                <div class="product-page-hero__item__footer">
+                  <a
+                    href="#"
+                    class="btn btn-main"
+                    data-micromodal-trigger="modal-1"
+                    >Записаться на экскурсию</a
+                  >
+                  <div class="cost">127$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="booking">
+        <div class="container">
+          <h2 class="title-h2">Забронировать экскурсию</h2>
+
+          <div class="booking-calculator">
+            <div action="#" class="booking-form">
+              <div class="input-label">
+                <label for="date">Выберите дату</label>
+                <input
+                  type="date"
+                  id="datefield"
+                  value="2013-01-08"
+                  min="2021-11-21"
+                />
+              </div>
+
+              <div class="input-label">
+                <label for="date">Время</label>
+                <input type="time" />
+              </div>
+
+              <div class="input-label">
+                <label for="date">Вид</label>
+                <div
+                  class="select choices"
+                  data-type="select-one"
+                  tabindex="0"
+                  role="listbox"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="choices__inner">
+                    <select
+                      name=""
+                      id=""
+                      class="select choices__input"
+                      hidden=""
+                      tabindex="-1"
+                      data-choice="active"
+                    >
+                      <option value="1">Групповой</option>
+                    </select>
+                    <div class="choices__list choices__list--single">
+                      <div
+                        class="choices__item choices__item--selectable"
+                        data-item=""
+                        data-id="1"
+                        data-value="1"
+                        data-custom-properties="null"
+                        aria-selected="true"
+                      >
+                        Групповой
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="choices__list choices__list--dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="choices__list" role="listbox">
+                      <div
+                        id="choices--a2j0-item-choice-1"
+                        class="
+                          choices__item choices__item--choice
+                          is-selected
+                          choices__item--selectable
+                          is-highlighted
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="1"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                        aria-selected="true"
+                      >
+                        Групповой
+                      </div>
+                      <div
+                        id="choices--a2j0-item-choice-2"
+                        class="
+                          choices__item
+                          choices__item--choice
+                          choices__item--selectable
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="2"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                      >
+                        Индивидуальный
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-label">
+                <label for="date">Эмират</label>
+                <div
+                  class="select choices"
+                  data-type="select-one"
+                  tabindex="0"
+                  role="listbox"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="choices__inner">
+                    <select
+                      name=""
+                      class="select choices__input"
+                      hidden=""
+                      tabindex="-1"
+                      data-choice="active"
+                    >
+                      <option value="1">Дубай</option>
+                    </select>
+                    <div class="choices__list choices__list--single">
+                      <div
+                        class="choices__item choices__item--selectable"
+                        data-item=""
+                        data-id="1"
+                        data-value="1"
+                        data-custom-properties="null"
+                        aria-selected="true"
+                      >
+                        Дубай
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="choices__list choices__list--dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="choices__list" role="listbox">
+                      <div
+                        id="choices--5oiv-item-choice-1"
+                        class="
+                          choices__item
+                          choices__item--choice
+                          choices__item--selectable
+                          is-highlighted
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="1"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                        aria-selected="true"
+                      >
+                        Аджман
+                      </div>
+                      <div
+                        id="choices--5oiv-item-choice-2"
+                        class="
+                          choices__item choices__item--choice
+                          is-selected
+                          choices__item--selectable
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="2"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                      >
+                        Дубай
+                      </div>
+                      <div
+                        id="choices--5oiv-item-choice-3"
+                        class="
+                          choices__item
+                          choices__item--choice
+                          choices__item--selectable
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="3"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                      >
+                        Рас Аль Хайма
+                      </div>
+                      <div
+                        id="choices--5oiv-item-choice-4"
+                        class="
+                          choices__item
+                          choices__item--choice
+                          choices__item--selectable
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="4"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                      >
+                        Ум Аль Кувейн
+                      </div>
+                      <div
+                        id="choices--5oiv-item-choice-5"
+                        class="
+                          choices__item
+                          choices__item--choice
+                          choices__item--selectable
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="5"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                      >
+                        Фуйджера
+                      </div>
+                      <div
+                        id="choices--5oiv-item-choice-6"
+                        class="
+                          choices__item
+                          choices__item--choice
+                          choices__item--selectable
+                        "
+                        role="option"
+                        data-choice=""
+                        data-id="6"
+                        data-value="1"
+                        data-select-text="Press to select"
+                        data-choice-selectable=""
+                      >
+                        Шарджа
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-main" data-micromodal-trigger="modal-1">
+                Забронировать экскурсию
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-product-description">
+        <div class="container">
+          <div class="page-product-description__wrap">
+            <h2 class="title-h2">Особенности</h2>
+
+            <div class="page-product-description__top">
+              <div class="page-product-description__features">
+                <div
+                  class="
+                    page-product-description__feature
+                    page-product-description__feature-positive
+                  "
+                >
+                  <p>
+                    На групповой основе ожидание трансфера от назначенного
+                    времени может занять до 30 минут. На индивидуальной основе
+                    трансфер подаётся четко в назначенное время. Ожидать
+                    водителя нужно в фойе.
+                  </p>
+                </div>
+                <div
+                  class="
+                    page-product-description__feature
+                    page-product-description__feature-negative
+                  "
+                >
+                  <p>
+                    Значимость этих проблем настолько очевидна, что базовый
+                    вектор развития в значительной степени обусловливает
+                    важность экономической целесообразности принимаемых решений.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-product-description__row">
+              <p>
+                Предлагаем вам самую увлекательную и востребованную Экскурсию —
+                Полет на вертолете. Вы пролетите как птица над новым и старым
+                Дубаем, над каналами, небоскребами, шикарными мечетями и
+                удивитесь тому, как дальновидные Правители Эмиратов развивают не
+                только нефтяную промышленность, но и другие богатства
+                аравийского побережья, среди них — береговая линия
+                протяженностью 1300 км, превращенная в бесконечный, чистейший
+                белоснежный пляж, привлекающий туристов круглый год и другие
+                многочисленные достопримечательности города. Всё это вы сможете
+                увидеть с высоты птичьего полёта.
+              </p>
+
+              <a
+                href="https://www.youtube.com/watch?v=_w2NrEne5Vo"
+                data-fancybox
+              >
+                <img src="./images/content/product-hel.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="page-product__how">
+        <div class="container">
+          <h2 class="title-h2">Как проходит экскурсия:</h2>
+
+          <ul>
+            <li>
+              <h4>Сбор из отеля</h4>
+              <p>
+                На групповой основе ожидание трансфера от назначенного времени
+                может занять до 30 минут. На индивидуальной основе трансфер
+                подаётся четко в назначенное время. Ожидать водителя нужно в
+                фойе отеля, так, чтобы Вас было легко найти.
+              </p>
+            </li>
+
+            <li>
+              <h4>Трансфер к вертолётной площадке</h4>
+              <p>
+                Водитель отвезёт вас к вертолётной площадке. Время в пути
+                зависит от удалённости вашего отеля от места взлёта и плотности
+                движения на дорогах.
+              </p>
+            </li>
+
+            <li>
+              <h4>Регистрация</h4>
+              <p>
+                По прибытии нужно пройти регистрацию на полёт, для этого нужно
+                предъявить оригинал паспорта и пройти взвешивание
+              </p>
+            </li>
+
+            <li>
+              <h4>Инструктаж</h4>
+              <p>
+                Перед полётом вы прослушаете инструктаж по безопасности на
+                русском языке.
+              </p>
+            </li>
+
+            <li>
+              <h4>Полёт на вертолёте</h4>
+              <p>
+                Взмыть вверх, как птица над Дубаем на борту вертолёта- мечта,
+                которая сбудется сегодня! Вы пролетите над главными
+                достопримечательностями мегаполиса и сделать фото с нового
+                ракурса.
+              </p>
+            </li>
+
+            <li>
+              <h4>Обратный трансфер</h4>
+              <p>
+                После полёта на парковке вас будет ожидать водитель. Он отвезёт
+                вас в отель. Время в пути зависит от удалённости вашего отеля от
+                вертолётной площадки и плотности трафика на дорогах.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-product__unordered">
+        <div class="container">
+          <ul>
+            <li>
+              <h5>12 минут</h5>
+              <p>
+                Помчитесь за 12 минут над знаковыми зданиями- символами ОАЭ!
+                Взлетите над знаменитым курортом Пальмового острова "Атлантис",
+                который гордо высится над водами залива. Прекрасный вид на Palm
+                Jumeirah сменится панорамой города и видом на отель-парус Burj
+                Al Arab. Затем вы направитесь в район Даунтаун, где увидите
+                самое большое здание в мире- башню Бурдж Аль Араб.
+              </p>
+            </li>
+            <li>
+              <h5>15 минут</h5>
+              <p>
+                Увидеть всё самое важное за 15 минут вертолётной прогулки?
+                Легко! Взмойте в воздух над фешенебельным курортом и насладитесь
+                видами мегаполиса. Самые главные достопримечательности, которые
+                стали символом эмирата откроются вашему взору.
+              </p>
+            </li>
+
+            <li>
+              <h5>25 минут</h5>
+              <p>
+                Для тех, кто хочет увидеть весь город, 25 минутная вертолётная
+                прогулка над Дубаем- то, что надо! Вы пролетите над современной
+                и исторической частью мегаполиса и познакомитесь с урбаном с
+                высоты! Взгляните на Дубай с нового ракурса!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="title-h2">Часто задаваемые вопросы</h2>
+          <div class="faq__wrap">
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что
+                  высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в
+                  формировании соответствующих условий активизации.
+                </p>
+
+                <p>
+                  Многие известные личности заблокированы в рамках своих
+                  собственных рациональных ограничений!
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что
+                  высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в
+                  формировании соответствующих условий активизации.
+                </p>
+
+                <p>
+                  Многие известные личности заблокированы в рамках своих
+                  собственных рациональных ограничений!
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что
+                  высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в
+                  формировании соответствующих условий активизации.
+                </p>
+
+                <p>
+                  Многие известные личности заблокированы в рамках своих
+                  собственных рациональных ограничений!
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что
+                  высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в
+                  формировании соответствующих условий активизации.
+                </p>
+
+                <p>
+                  Многие известные личности заблокированы в рамках своих
+                  собственных рациональных ограничений!
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion__intro">
+                <h4>Где мы встречаемся?</h4>
+
+                <span class="accordion__arr">
+                  <img src="./images/chevron.svg" alt="" />
+                </span>
+              </div>
+              <div class="accordion__content">
+                <p>
+                  Разнообразный и богатый опыт говорит нам, что
+                  высокотехнологичная концепция общественного уклада
+                  обеспечивает широкому кругу (специалистов) участие в
+                  формировании соответствующих условий активизации.
+                </p>
+
+                <p>
+                  Многие известные личности заблокированы в рамках своих
+                  собственных рациональных ограничений!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        jnpsds j, 'njq
+      </section>
+
+      <section class="catalog-upsell">
+        <div class="container">
+          <div class="title__top">
+            <h2 class="title-h2">Популярные</h2>
+            <div class="slider-arrows catalog-upsell-arrows">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="catalog-upsell__wrap">
+            <div class="swiper catalog-upsell-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product__image">
+                      <img src="./images/content/prod-2.jpg" alt="" />
+                    </div>
+
+                    <div class="product__content">
+                      <div class="product__labels">
+                        <span class="label-green label">Ежедневно</span>
+                      </div>
+
+                      <div class="product-params">
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#clock"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>3ч</p>
+                        </div>
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#users"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>2-4</p>
+                        </div>
+                      </div>
+
+                      <h4 class="product__title">
+                        Тематический парк MotionGate
+                      </h4>
+                      <div class="read-more" data-rm-words="20">
+                        <p class="product__excerpt">
+                          Катание на джипах по песчаным барханам, ужин барбекю,
+                          шоу – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах,
+                        </p>
+                      </div>
+
+                      <div class="product__price">
+                        <p>от 150 $</p>
+                        <span>250 $</span>
+                      </div>
+
+                      <div class="product__footer">
+                        <a href="#" class="btn btn-main">Подробнее</a>
+                        <a href="#" class="btn btn-link">Забронировать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product stock">
+                    <div class="stock-label">Акция</div>
+
+                    <div class="product__image">
+                      <img src="./images/content/prod-6.jpg" alt="" />
+                    </div>
+
+                    <div class="product__content">
+                      <div class="product__labels">
+                        <span class="label-green label">Ежедневно</span>
+                      </div>
+
+                      <div class="product-params">
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#clock"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>3ч</p>
+                        </div>
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#users"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>2-4</p>
+                        </div>
+                      </div>
+
+                      <h4 class="product__title">Пустынное сафари</h4>
+                      <div class="read-more" data-rm-words="20">
+                        <p class="product__excerpt">
+                          Катание на джипах по песчаным барханам, ужин барбекю,
+                          шоу – танура, танец живота, краткое катание на
+                          верблюдах,
+                        </p>
+                      </div>
+
+                      <div class="product__price">
+                        <p>от 150 $</p>
+                        <span>250 $</span>
+                      </div>
+
+                      <div class="product__footer">
+                        <a href="#" class="btn btn-main">Подробнее</a>
+                        <a href="#" class="btn btn-link">Забронировать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product__image">
+                      <img src="./images/content/prod-2.jpg" alt="" />
+                    </div>
+
+                    <div class="product__content">
+                      <div class="product__labels">
+                        <span class="label-green label">Ежедневно</span>
+                      </div>
+
+                      <div class="product-params">
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#clock"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>3ч</p>
+                        </div>
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#users"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>2-4</p>
+                        </div>
+                      </div>
+
+                      <h4 class="product__title">
+                        Тематический парк MotionGate
+                      </h4>
+                      <div class="read-more" data-rm-words="20">
+                        <p class="product__excerpt">
+                          Катание на джипах по песчаным барханам, ужин барбекю,
+                          шоу – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах,
+                        </p>
+                      </div>
+
+                      <div class="product__price">
+                        <p>от 150 $</p>
+                        <span>250 $</span>
+                      </div>
+
+                      <div class="product__footer">
+                        <a href="#" class="btn btn-main">Подробнее</a>
+                        <a href="#" class="btn btn-link">Забронировать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product__image">
+                      <img src="./images/content/prod-2.jpg" alt="" />
+                    </div>
+
+                    <div class="product__content">
+                      <div class="product__labels">
+                        <span class="label-green label">Ежедневно</span>
+                      </div>
+
+                      <div class="product-params">
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#clock"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>3ч</p>
+                        </div>
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#users"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>2-4</p>
+                        </div>
+                      </div>
+
+                      <h4 class="product__title">
+                        Тематический парк MotionGate
+                      </h4>
+                      <div class="read-more" data-rm-words="20">
+                        <p class="product__excerpt">
+                          Катание на джипах по песчаным барханам, ужин барбекю,
+                          шоу – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах,
+                        </p>
+                      </div>
+
+                      <div class="product__price">
+                        <p>от 150 $</p>
+                        <span>250 $</span>
+                      </div>
+
+                      <div class="product__footer">
+                        <a href="#" class="btn btn-main">Подробнее</a>
+                        <a href="#" class="btn btn-link">Забронировать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product__image">
+                      <img src="./images/content/prod-2.jpg" alt="" />
+                    </div>
+
+                    <div class="product__content">
+                      <div class="product__labels">
+                        <span class="label-green label">Ежедневно</span>
+                      </div>
+
+                      <div class="product-params">
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#clock"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>3ч</p>
+                        </div>
+                        <div class="param">
+                          <div class="param__icon">
+                            <svg>
+                              <use
+                                      xlink:href="./images/sprites/sprite-multi.svg#users"
+                              ></use>
+                            </svg>
+                          </div>
+                          <p>2-4</p>
+                        </div>
+                      </div>
+
+                      <h4 class="product__title">
+                        Тематический парк MotionGate
+                      </h4>
+                      <div class="read-more" data-rm-words="20">
+                        <p class="product__excerpt">
+                          Катание на джипах по песчаным барханам, ужин барбекю,
+                          шоу – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах, – танура, танец живота, краткое катание на
+                          верблюдах,
+                        </p>
+                      </div>
+
+                      <div class="product__price">
+                        <p>от 150 $</p>
+                        <span>250 $</span>
+                      </div>
+
+                      <div class="product__footer">
+                        <a href="#" class="btn btn-main">Подробнее</a>
+                        <a href="#" class="btn btn-link">Забронировать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback">
+        <div class="callback__town">
+          <img src="./images/town.svg" alt="" />
+        </div>
+        <div class="container">
+          <h2 class="title-h2">Остались вопросы?</h2>
+          <div class="callback__wrap">
+            <div class="callback__left">
+              <p>
+                Оставьте заявку и мы проконсультируем вас и ответим на все
+                вопросы
+              </p>
+              <p>Вы так же можете связаться с нами удобным для вас способом</p>
+              <div class="callback__socials">
+                <div class="soc">
+                  <img src="./images/ig.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/wa.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/fb.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/phone.svg" alt="" />
+                </div>
+
+                <div class="soc">
+                  <img src="./images/email.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="callback__form">
+              <form action="#">
+                <input type="text" placeholder="Имя" />
+                <input type="tel" placeholder="Телефон" />
+                <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Сообщение"
+                ></textarea>
+                <button type="submit" class="btn btn-main">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./components/footer.html') @@include('./components/modal-1.html')
+    @@include('./components/modal-review.html')
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

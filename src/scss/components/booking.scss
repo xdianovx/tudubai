@@ -1,0 +1,55 @@
+.booking {
+  margin-top: 264px;
+}
+
+.booking-calculator {
+  margin-top: 32px;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  flex-wrap: wrap;
+  .btn {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-column-start: 4;
+  }
+}
+@media (max-width: 1440px) {
+  .booking {
+    margin-top: 120px;
+  }
+
+  .booking-calculator {
+    margin-top: 24px;
+  }
+
+  .booking-form {
+    gap: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .booking-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .booking-form .btn {
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 550px) {
+  .booking-calculator {
+    margin-top: 16px;
+  }
+  .booking-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .booking-form .btn {
+    grid-column-start: 1;
+  }
+}

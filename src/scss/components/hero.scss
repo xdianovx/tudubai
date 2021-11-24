@@ -1,0 +1,166 @@
+.hero {
+  height: 768px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 112px;
+  .container {
+    position: relative;
+  }
+}
+
+.hero__info {
+  color: $white;
+  h1 {
+    max-width: 520px;
+  }
+
+  p {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+}
+
+.hero__btns {
+  margin-top: 56px;
+}
+
+.hero__cards {
+  position: absolute;
+  width: 100%;
+  max-width: 1296px;
+  height: 334px;
+  bottom: -118px;
+  overflow: hidden;
+}
+
+.hero-cards-slider {
+  max-width: 100%;
+}
+
+.hero__card {
+  display: block;
+  height: 334px;
+  margin: 0;
+  background-size: cover;
+  border-radius: 8px;
+  position: relative;
+  .hero__card_info {
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    p {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      color: $white;
+    }
+  }
+
+  .hero__card_arr {
+    margin-left: auto;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    height: 620px;
+    padding-top: 64px;
+  }
+
+  .hero__btns {
+    margin-top: 40px;
+  }
+
+  .hero__cards {
+    bottom: -80px;
+    max-width: 100%;
+  }
+
+  .hero__card .hero__card_info {
+    justify-content: space-between;
+    width: 78%;
+  }
+}
+
+@media (max-width: 1370px) {
+  .hero-cards-slider {
+    width: auto;
+    max-width: none;
+  }
+  .hero__cards {
+    max-width: none;
+    width: 100%;
+    position: static;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero {
+    height: 320px;
+    padding-top: 32px;
+  }
+  .hero__card {
+    height: 128px;
+  }
+
+  .hero__info p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 8px;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+
+    .btn-underline {
+      padding: 0;
+      margin-top: 16px;
+    }
+  }
+
+  .hero__card .hero__card_info {
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    top: 8px;
+    right: 16px;
+    transform: none;
+    left: auto;
+
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .hero__card .hero__card_arr {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .hero__cards {
+    margin-top: 30px;
+  }
+
+  .hero__card .hero__card_arr {
+    margin-left: 0;
+  }
+}

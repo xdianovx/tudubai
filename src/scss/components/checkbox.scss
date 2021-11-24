@@ -1,0 +1,92 @@
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__text {
+  position: relative;
+  padding: 0 0 0 32px;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.checkbox__text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $accent;
+  border-radius: 4px;
+  transition: 0.2s;
+  content: '';
+}
+
+.checkbox input:checked + .checkbox__text::after {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 14px;
+  height: 12px;
+  background: url('../images/check.svg') no-repeat center / contain;
+  transition: 0.2s;
+  content: '';
+}
+
+.radio input {
+  position: absolute;
+  z-index: -1;
+  margin: 10px 0 0 7px;
+  opacity: 0;
+}
+
+.radio__text {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+
+.radio__text::before {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  border: 1px solid #575757;
+  border-radius: 50%;
+  content: '';
+}
+
+.radio__text::after {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  width: 12px;
+  height: 12px;
+  background: #575757;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.2s;
+  content: '';
+}
+
+.radio input:checked + .radio__text::after {
+  opacity: 1;
+}
+
+@media (max-width: 1440px) {
+  .checkbox__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .checkbox__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

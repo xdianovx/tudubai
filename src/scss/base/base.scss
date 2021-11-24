@@ -1,11 +1,14 @@
 @import 'normalize.css/normalize';
-
-@include focus-visible;
+@import 'node_modules/choices.js/src/styles/choices.scss';
+@import 'swiper/swiper';
+@import 'node_modules/@fancyapps/ui/src/Fancybox/Fancybox';
+//@include focus-visible;
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: none;
 }
 
 h1,
@@ -39,7 +42,10 @@ a {
 
 html {
   height: 100%;
-  font-size: 16px;
+}
+
+button {
+  border: none;
 }
 
 body {
@@ -48,6 +54,8 @@ body {
   box-sizing: border-box;
   min-height: 100%;
   color: $text;
+  font-weight: 400;
+  font-size: 18px;
   font-family: 'ProximaNova', sans-serif;
 }
 
@@ -58,4 +66,241 @@ img {
   vertical-align: middle;
 }
 
+input {
+  padding: 11px 16px;
+  color: $text;
+  font-size: 18px;
+  line-height: 20px;
+  background: $white;
+  border: 1px solid $accent;
+  border-radius: 4px;
 
+  &::placeholder {
+    color: $text;
+  }
+}
+
+textarea {
+  padding: 13px 16px;
+  color: $text;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid $accent;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $text;
+  }
+}
+
+.title-h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 68px;
+}
+
+.title-h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.input-label {
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.choices[data-type*='select-one'] {
+  &.is-open {
+    &::after {
+      margin-top: 0;
+      transform: rotate(0);
+    }
+  }
+
+  &::after {
+    top: 22px;
+    right: 16px;
+    width: 14px;
+    height: 8px;
+    background: url('../images/chevron-black.svg') no-repeat center / contain;
+    border-width: 0 !important;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+  }
+}
+
+.choices__inner {
+  padding: 13px 16px;
+  font-size: 18px;
+  background: $white;
+  border: 1px solid $accent;
+  border-radius: 4px;
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+  border: 1px solid $accent;
+}
+
+.choices[data-type*='select-one'] .choices__inner {
+  padding-bottom: 13px;
+}
+
+.choices__list--single {
+  padding: 0;
+}
+
+.is-open .choices__list--dropdown {
+  border-color: $accent;
+}
+
+.choices__list--dropdown {
+  top: 120%;
+  padding: 13px 16px;
+  font-size: 18px;
+  border: 1px solid $accent;
+  border-radius: 4px;
+
+  .choices__item {
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background: $white;
+}
+
+.slider-pagination {
+}
+
+.title__top {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.slider-arrows {
+  display: flex;
+  align-items: center;
+  width: 96px;
+  justify-content: space-between;
+  margin-left: 32px;
+  height: 40px;
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: #71c168;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    &:after {
+      position: static;
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: url('../images/chevron-arr.svg') no-repeat center center /
+        contain;
+      height: 16px;
+      width: 8px;
+      left: 16px;
+    }
+  }
+
+  .swiper-button-next {
+    &:before {
+    }
+  }
+
+  .swiper-button-prev {
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+
+  .slider-arrows {
+    max-width: 90px;
+  }
+
+  .title-h1 {
+    font-size: 56px;
+    line-height: 110%;
+  }
+
+  .title-h2 {
+    font-size: 32px;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title-h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .choices__inner {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+  .input-label label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 620px) {
+  .title-h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title-h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
